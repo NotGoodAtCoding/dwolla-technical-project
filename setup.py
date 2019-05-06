@@ -1,3 +1,4 @@
+"""Setup and install as a package."""
 import os
 
 from setuptools import setup, find_packages

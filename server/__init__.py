@@ -1,1 +1,1 @@
-"""Main server application"""
+"""Main server application."""

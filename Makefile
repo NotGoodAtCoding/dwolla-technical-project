@@ -34,10 +34,10 @@ run:
 
 .PHONY: clean
 clean: down
-	rm -rf __pycache__/
 	rm -rf .eggs/
-	find . -name '*.egg-info' -exec rm -fr {} +
+	find . -name '*.egg-info' -exec rm -rf {} +
 	find . -name '*.egg' -exec rm -f {} +
+	find . -iname '*__pycache__*' -exec rm -rf {} +
 	coverage erase
 
 .PHONY: test

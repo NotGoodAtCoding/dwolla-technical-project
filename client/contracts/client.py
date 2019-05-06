@@ -1,3 +1,4 @@
+"""Contract tests for the client-side interaction."""
 import atexit
 import unittest
 
@@ -13,7 +14,10 @@ atexit.register(pact.stop_service)
 
 
 class GetUserInfoContract(unittest.TestCase):
+    """Pact verification class for pact-python tests."""
+
     def test_get_time(self):
+        """Verify the expected response from the time server."""
         expected = {
           'currentTime': Term(
               '\d+-\d+-\d \d+:\d+:\d+',  # noqa W605

@@ -1,4 +1,6 @@
 #!/usr/bin/python
+"""Main time server application."""
+
 from flask import Flask
 
 
@@ -14,6 +16,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
+    """Return current system time."""
     return clock.current_time()
 
 

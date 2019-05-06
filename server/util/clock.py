@@ -1,4 +1,5 @@
 #!/usr/bin/python
+"""Time utils."""
 from datetime import datetime
 from json import dumps
 
