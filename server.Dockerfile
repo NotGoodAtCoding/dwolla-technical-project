@@ -7,6 +7,6 @@ COPY server/ /server
 WORKDIR server
 ENV PATH=$PATH:/server
 
-EXPOSE 5000
+EXPOSE 5001
 
 CMD ["python", "-m", "main"]
