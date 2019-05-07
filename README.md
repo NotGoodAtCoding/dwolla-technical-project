@@ -11,21 +11,11 @@ The time server has a single endpoint, the root, and returns a response in the f
 
 The time is given in the format `MONTH-DAY-YEAR(2) HOUR(24):MINUTE:SECOND` in UTC
 
-## Setup
-
-This project includes some demo and convenience scripts, namely `local_run.sh` and `run_pact.sh` which you may have to 
-add permissions to if you wish to use them. 
-
-``` 
-# POSIX
-chmod +x local_run.sh
-chmod +x run_pact.sh
-```
 
 ### Requirements
 
 ``` 
-Python 3.6
+Python 3.7
 docker
 docker-compose
 POSIX machine (not guaranteed to run on Windows)
